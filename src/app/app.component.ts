@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'mk';
+  menuState: string = "show";
+
+  toggleMenu() {
+    this.menuState = this.menuState === 'show' ? 'hidden' : 'show';
+  }
 }
