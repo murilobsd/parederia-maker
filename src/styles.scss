@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
 @import 'variables';
 @import '../node_modules/bootstrap/scss/bootstrap';
 
@@ -21,9 +21,16 @@
         }
     }
 
+    .nav-item {
+        &:hover {
+            background-color: $nav-item-hover-color;
+            color: $white;
+        }
+    }
     .nav-link {
-        font-weight: 300;
-        font-size: 12px;
+        font-weight: $sidebar-link-weight;
+        font-size: $sidebar-link-size;
+        font-family: $sidebar-font-family;
         color: $sidebar-link-color;
         text-transform: uppercase;
         &:hover {
@@ -33,4 +40,23 @@
             color: inherit;
         }
     }
+    
+    & hr {
+        margin-top: 0rem;
+    }
 }
+
+/*
+ * Avatar
+ */
+ .avatar {
+    margin-top: $avatar-mt;
+    position: relative;
+    width: $avatar-width;
+    -webkit-border-radius: $avatar-radius;
+    -moz-border-radius: $avatar-radius;
+    border-radius: $avatar-radius;
+    -webkit-box-shadow: 0 0 0 3px #fff,0 0 0 4px #999,0 2px 5px 4px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 0 0 3px #fff,0 0 0 4px #999,0 2px 5px 4px rgba(0,0,0,0.2);
+    box-shadow: 0 0 0 2px #fff,0 0 0 4px #bfbfbf,0 2px 5px 4px rgba(0,0,0,0.2);
+ }
