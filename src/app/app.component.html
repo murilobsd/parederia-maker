@@ -1,5 +1,5 @@
 <div class="wrapper">
-    <mk-sidebar [state]="menuState"></mk-sidebar>
+    <mk-sidebar [state]="menuState" [quadros]="quadros"></mk-sidebar>
 
     <div id="content">
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -7,9 +7,13 @@
                 <a href="#" (click)="toggleMenu()">
                     <i class="fa fa-3x fa-plus-circle" aria-hidden="true"
                     [hidden]="menuState === 'show'"
+                    tooltip="Adicionar um novo quadro."
+                    placement="right"
                     ></i>
                     <i class="fa fa-3x fa-chevron-circle-left" aria-hidden="true"
                     [hidden]="menuState !== 'show'"
+                    tooltip="Esconder menu."
+                    placement="bottom"
                     ></i>
                 </a>
                 <div class="btn-toolbar mb-2 mb-md-0 float-right">
