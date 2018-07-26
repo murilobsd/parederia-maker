@@ -14,9 +14,10 @@ $fa-font-path: "~font-awesome/fonts";
         min-width: 250px;
         max-width: 250px;
         min-height: 100vh;
-        background: $sidebar-bg;;
-        color: #fff;
+        background: $sidebar-bg;
+        color: $sidebar-font-family;
         transition: all 0.3s;
+        font-family: "Montserrat";
 
         & .logo {
             padding: $sidebar-logo-pd;
@@ -44,6 +45,24 @@ $fa-font-path: "~font-awesome/fonts";
             }
             &:active {
                 color: inherit;
+            }
+        }
+
+        & .cartbtn {
+            height: 80px;
+            padding: 10px;
+            background-color: #ed6161;
+            color: aliceblue;
+            position: fixed;
+            width: 250px;
+            bottom: 0px;
+            & h5 {
+                font-weight: 600;
+                display: inline;
+            }
+            & img {
+                float: left;
+                margin-top: -15px;
             }
         }
         
