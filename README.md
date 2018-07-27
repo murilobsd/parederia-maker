@@ -16,7 +16,7 @@ Uma vez publicada a sua parede, acompanhe seu pedido através do maker.
 
 Instalação
 ----------
-Antes de baixar o projeto crie seu db no [firebase](https://console.firebase.google.com) [https://duckduckgo.com/?q=how+create+firebase+db&t=canonical&ia=web](na internet existem inúmeros artigos) não se reprima.
+Antes de baixar o projeto crie seu db no [firebase](https://console.firebase.google.com) [na internet existem inúmeros artigos](https://duckduckgo.com/?q=how+create+firebase+db&t=canonical&ia=web) não se reprima.
 
 Certifique-se também que tenha o [angular-cli](https://cli.angular.io/) instalado. Caso contrário:
 
