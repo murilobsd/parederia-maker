@@ -99,6 +99,10 @@ $fa-font-path: "~font-awesome/fonts";
         .footer {
             padding: 20px;
         }
+
+        .parede {
+            min-height: 100%;
+        }
     }
 }
 
@@ -119,3 +123,11 @@ Modal center screen
        transform:translateY(-50%);
 }
 
+
+.corparede {
+    border: none;
+    background: none;
+    font-weight: 600;
+    width: 100%;
+    padding: 10px 0;
+}

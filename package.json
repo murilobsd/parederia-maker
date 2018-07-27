@@ -1,6 +1,6 @@
 {
-  "name": "maker",
-  "version": "0.0.0",
+  "name": "parederia-maker",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -24,6 +24,7 @@
     "core-js": "^2.5.4",
     "font-awesome": "^4.7.0",
     "ngx-bootstrap": "^3.0.1",
+    "res": "^0.4.0",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
   },
