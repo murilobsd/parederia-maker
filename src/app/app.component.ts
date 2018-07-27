@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  menuState: string = "show";
+  menuState: string = "hidden";
 
   quadros: Array<string> = ["modulra 1", "modulra 1", "modulra 1", 
   "modulra 1", "modulra 1", "modulra 1", "modulra 1", "modulra 1"];
