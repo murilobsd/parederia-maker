@@ -18,6 +18,11 @@ Instalação
 ----------
 Antes de baixar o projeto crie seu db no [firebase](https://console.firebase.google.com) [na internet existem inúmeros artigos](https://duckduckgo.com/?q=how+create+firebase+db&t=canonical&ia=web) não se reprima.
 
+
+Será necessário instalar node e o npm, siga instruções nesse [link](https://nodejs.org/en/download/package-manager/) de acordo
+com o sistema operação que você está utilizando.
+
+
 Certifique-se também que tenha o [angular-cli](https://cli.angular.io/) instalado. Caso contrário:
 
 ```sh
@@ -30,7 +35,7 @@ $ cd parederia-maker/
 $ npm i
 ```
 
-ou via packge:
+ou via packge (**não existe ainda**):
 
 ```sh
 $ npm install parederia-maker@0.0.1
@@ -47,6 +52,24 @@ $ ng serve
 
 Acesse pelo seu navegador: [http://localhost:4200](http://localhost:4200)
 
+Produção
+--------
+
+Caso queira usar em produção sugerimos fazer o hosting no firebase, porque já
+tem os arquivos configurados caso contrário basta pegar os arquivos gerados
+dentro da pasta **dist/<nome_projeto>**.
+
+```sh
+$ npm i -g firebase-tools
+$ firebase login
+$ ng build --prod
+$ firebase deploy
+```
 
 Contribuir
 ----------
+
+Autor
+-----
+
+Toda **idéia** e **layout** foi matutada pelo [Sir. Mazza](https://github.com/nissinmiojo)
