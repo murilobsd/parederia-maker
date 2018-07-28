@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "parederia-maker"
+    "default": "parederia-maker",
+    "production": "parederia-maker",
+    "dev": "parederia-maker-dev"
   }
 }
