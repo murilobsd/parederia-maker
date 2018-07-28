@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
-import * as res from 'res';
-
-console.log("DPI: ", res.dpi(), "ddpx");
+// import * as res from 'res';
 
 @Component({
   selector: 'mk-root',

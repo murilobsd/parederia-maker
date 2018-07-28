@@ -1,0 +1,17 @@
+<!-- menu que vai dentro do quadro -->
+<div class="menu"
+  (mouseover)="changeStyle($event)"
+  (mouseleave)="changeStyle($event)"
+  >
+  <ul [ngClass]="defaultClass"
+      (click)="openMenu($event)"
+      *ngIf="items">
+    <li [style.display]="isOpen ? 'block' : 'none'" 
+        *ngFor="let item of items">
+      <a>
+        <img src="{{item.symbol}}">
+      </a>
+    </li>
+  </ul>
+</div>
+<!-- fim do menu do quadro -->

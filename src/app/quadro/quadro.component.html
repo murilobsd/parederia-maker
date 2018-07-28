@@ -1,0 +1,12 @@
+<div ngDraggable class="drag-block quadro_a2" 
+  (started)="onStart($event)" 
+  (stopped)="onStop($event)" 
+  (movingOffset)="onMoving($event)"
+  [preventDefaultEvent]="true" 
+  (endOffset)="onMoveEnd($event)">
+  <div class="thumb">
+      <mk-menu></mk-menu>
+  </div>
+</div>
+  
+  
