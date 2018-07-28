@@ -72,4 +72,4 @@ Contribuir
 Autor
 -----
 
-Toda **idéia** e **layout** foi matutada pelo [Sir. Mazza](https://github.com/nissinmiojo)
+Toda **idéia** e **layout** foi matutada pelo [Sir. Mazza](https://github.com/mazzazzam)
