@@ -2,25 +2,35 @@ language: node_js
 node_js:
   - "8.11.3"
 
+branches:
+  only:
+    - dev
+    - master
+
 before_script:
   - npm install -g firebase-tools
   - npm install -g @angular/cli
 
+script:
+  - ng build --prod
+
 deploy:
   - provider: script
     skip_cleanup: true
-    script: ng build --prod && firebase deploy --token $FIREBASE_TOKEN -P dev
+    script: firebase deploy --token $FIREBASE_TOKEN -P dev
     on:
       branch: dev
   - provider: script
     skip_cleanup: true
-    script: ng build --prod && firebase deploy --token $FIREBASE_TOKEN -P production
+    script: firebase deploy --token $FIREBASE_TOKEN -P production
     on:
       branch: master
     
 notifications:
   email:
     on_failure: change
-    on_success: change
-  webhooks: https://fathomless-fjord-24024.herokuapp.com/notify
+    on_success: never
+  webhooks: 
+    urls:
+      - https://fathomless-fjord-24024.herokuapp.com/notify
   
