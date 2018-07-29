@@ -1,6 +1,8 @@
 // all
 $body-bg: #F4F2F0;
 $font-size-base: 0.875rem;
+$w-100: 100%;
+$h-100: 100%;
 
 // sidebar
 $sidebar-bg: #2F2F2F;
@@ -25,3 +27,15 @@ $icon-color-hover: $sidebar-bg;
 
 //tooltip
 $tooltip-bg: $nav-item-hover-color;
+
+
+//menu
+$menu-hover-bg: rgba(222, 222, 222, 0.48);
+$menu-hide-bg: rgba(222, 222, 222, 0);
+$openmenu-radius: 50%;
+$openmenu-w: 50px; // width
+$openmenu-h: 50px; // height
+$openmenu-t: calc(50% - (#{$openmenu-w} / 2)); // top
+$openmenu-l: calc(50% - (#{$openmenu-h} / 2)); // left
+$openmenu-zindex: 1;
+$openmenu-opacity: 0; 

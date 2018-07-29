@@ -1,81 +1,37 @@
+@import '../../../variables';
+@import '../../../mixins';
+
 .menu {
-    width: 100%;
-    height: 100%;
-    position: relative
-}
+    width: $w-100;
+    height: $h-100;
+    position: relative;
+    
+    & .openmenu {
+        border-radius: $openmenu-radius;
+        width: $openmenu-w;
+        height: $openmenu-h;
+        position: absolute;
+        opacity: $openmenu-opacity;
+        top: $openmenu-t;
+        left: calc(50% - 25px);
+        cursor: pointer;
+        @include transition(.3s ease-in);
+        z-index: $openmenu-zindex;
+    }
 
-.menu .openmenu {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    opacity: 0;
-    top: calc(50% - 25px);
-    left: calc(50% - 25px);
-    cursor: pointer;
-    -webkit-transition: .3s ease-in;
-    -moz-transition: .3s ease-in;
-    -o-transition: .3s ease-in;
-    transition: .3s ease-in;
-    z-index: 1
-}
+    & .menuhover {
+        background-color: $menu-hover-bg;
+        opacity: 1;
+    }
 
-.menu .menuhover {
-    background-color: rgba(222, 222, 222, 0.48);
-    opacity: 1
-}
+    & .hidemainmenu {
+        background-color: $menu-hide-bg;
+    }
 
-.menu li:nth-child(1) {
-    top: 30px;
-    left: 30px;
-    display: block;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background-color: #d3d3d3;
-    text-align: center;
-    border-radius: 50%
-}
-
-.menu li:nth-child(2) {
-    top: -30px;
-    left: -30px;
-    display: block;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background-color: #d3d3d3;
-    text-align: center;
-    border-radius: 50%
-}
-
-.menu li:nth-child(3) {
-    top: -30px;
-    left: 30px;
-    display: block;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background-color: #d3d3d3;
-    text-align: center;
-    border-radius: 50%
-}
-
-.menu li:nth-child(4) {
-    top: 30px;
-    left: -30px;
-    display: block;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background-color: #d3d3d3;
-    text-align: center;
-    border-radius: 50%
-}
-
-.hidemainmenu {
-    background-color: rgba(222, 222, 222, 0) !important;
-    background-image: url()
+    li {
+        @include menuitens(30px, 50px, 50px, #d3d3d3, 4);
+    }
+    
 }
 
 .cross::before {
