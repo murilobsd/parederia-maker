@@ -1,0 +1,50 @@
+@import '../../../variables';
+@import '../../../mixins';
+
+.menu {
+    width: $w-100;
+    height: $h-100;
+    position: relative;
+    
+    & .openmenu {
+        border-radius: $openmenu-radius;
+        width: $openmenu-w;
+        height: $openmenu-h;
+        position: absolute;
+        opacity: $openmenu-opacity;
+        top: $openmenu-t;
+        left: calc(50% - 25px);
+        cursor: pointer;
+        @include transition(.3s ease-in);
+        z-index: $openmenu-zindex;
+    }
+
+    & .menuhover {
+        background-color: $menu-hover-bg;
+        opacity: 1;
+    }
+
+    & .hidemainmenu {
+        background-color: $menu-hide-bg;
+    }
+
+    li {
+        @include menuitens(30px, 50px, 50px, #d3d3d3, 4);
+    }
+    
+}
+
+.cross::before {
+    position: absolute;
+    top: -50px;
+    left: -15px;
+    content: "\f00d";
+    font-family: FontAwesome;
+    font-size: 100px;
+    font-weight: 100;
+    color: #d3d3d3;
+    text-align: center;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeIn
+}

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
-@import 'variables';
+@import './variables';
 @import '~bootstrap/scss/bootstrap';
 $fa-font-path: "~font-awesome/fonts";
 @import '~font-awesome/scss/font-awesome';
@@ -73,9 +73,11 @@ $fa-font-path: "~font-awesome/fonts";
     }
     
     #content {
+        position: fixed;
         width: 100%;
-        min-height: 100vh;
-        transition: all 0.3s;
+        height: 100%;
+        left: 0;
+        top: 0;
 
         .avatar {
             margin-top: $avatar-mt;
@@ -130,4 +132,27 @@ Modal center screen
     font-weight: 600;
     width: 100%;
     padding: 10px 0;
+}
+
+.quadro_a2 {
+    width: calc(440px * 0.6);
+    height: calc(615px * 0.6);
+    -webkit-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+    -o-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+    background-color: black
+}
+
+.quadro_a2 .thumb {
+    background: white;
+    width: calc(440px * 0.6 - 16px);
+    height: calc(615px * 0.6 - 16px);
+    position: relative;
+    top: 8px;
+    left: 8px;
+    -webkit-box-shadow: inset -1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset -1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: inset -1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset -1px 1px 3px 1px rgba(0, 0, 0, 0.2)
 }
