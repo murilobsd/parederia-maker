@@ -1,14 +1,117 @@
-#chat {
-    position: fixed;
-    background-color: black;
-    opacity: 0.8;
+.quadro_a2 {
+    width: calc(440px * 0.6);
+    height: calc(615px * 0.6);
+    -webkit-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+    -o-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+    background-color: black
 }
-.chat-corner-resize {
-    position: absolute;
-    width: 10px;
-    height: 10px;
+
+.quadro_a2 .thumb {
+    background: white;
+    width: calc(440px * 0.6 - 16px);
+    height: calc(615px * 0.6 - 16px);
+    position: relative;
+    top: 8px;
+    left: 8px;
+    -webkit-box-shadow: inset -1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset -1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: inset -1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset -1px 1px 3px 1px rgba(0, 0, 0, 0.2)
 }
-#chat-top-left-resize { top: 0px; left: 0px; }
-#chat-top-right-resize { top: 0px; right: 0px; }
-#chat-bottom-left-resize { bottom: 0px; left: 0px; }
-#chat-bottom-right-resize { bottom: 0px; right: 0px; }
+
+.quadro_a3 {
+    width: calc(315px * 0.6);
+    height: calc(440px * 0.6);
+    -webkit-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+    -o-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+    background-color: black
+}
+
+.quadro_a3 .thumb {
+    background: white;
+    width: calc(315px * 0.6 - 16px);
+    height: calc(440px * 0.6 - 16px);
+    position: relative;
+    top: 8px;
+    left: 8px;
+    -webkit-box-shadow: inset -1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset -1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: inset -1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset -1px 1px 3px 1px rgba(0, 0, 0, 0.2)
+}
+
+.quadro_a4 {
+    width: calc(315px * 0.6);
+    height: calc(230px * 0.6);
+    background-color: white;
+    -webkit-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+    -o-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+    background-color: black
+}
+
+.quadro_a4 .thumb {
+    background: white;
+    width: calc(315px * 0.6 - 16px);
+    height: calc(230px * 0.6 - 16px);
+    position: relative;
+    top: 8px;
+    left: 8px;
+    -webkit-box-shadow: inset -1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset -1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: inset -1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset -1px 1px 3px 1px rgba(0, 0, 0, 0.2)
+}
+
+.quadro_a5 {
+    width: calc(170px * 0.6);
+    height: calc(230px * 0.6);
+    background-color: white;
+    -webkit-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+    -o-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+    background-color: black
+}
+
+.quadro_a5 .thumb {
+    background: white;
+    width: calc(170px * 0.6 - 16px);
+    height: calc(230px * 0.6 - 16px);
+    position: relative;
+    top: 8px;
+    left: 8px;
+    -webkit-box-shadow: inset -1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset -1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: inset -1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset -1px 1px 3px 1px rgba(0, 0, 0, 0.2)
+}
+
+.quadro_12x12 {
+    width: calc(120px * 0.6);
+    height: calc(120px * 0.6);
+    background-color: white;
+    -webkit-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+    -o-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+    background-color: black
+}
+
+.quadro_12x12 .thumb {
+    background: white;
+    width: calc(120px * 0.6 - 16px);
+    height: calc(120px * 0.6 - 16px);
+    position: relative;
+    top: 8px;
+    left: 8px;
+    -webkit-box-shadow: inset -1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset -1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: inset -1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset -1px 1px 3px 1px rgba(0, 0, 0, 0.2)
+}
