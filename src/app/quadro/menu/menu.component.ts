@@ -38,7 +38,7 @@ export class MenuComponent implements OnInit {
 
   alterarOrientacao($event) {
     console.log("Pedido de altercao do quadro.");
-    this.alteradoOrientacao.emit($event);
+    this.alteradoOrientacao.emit(true);
   }
 
 }
