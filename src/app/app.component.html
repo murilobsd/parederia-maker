@@ -38,7 +38,12 @@
         <!-- parede -->
         <div class="parede">
             <div *ngFor="let quadro of quadros">
-                <mk-quadro [id]="quadro.id" [position]="quadro.position"></mk-quadro>
+                <mk-quadro [id]="quadro.id" 
+                           [position]="quadro.position"
+                           [largura]="quadro.largura"
+                           [altura]="quadro.altura"
+                >
+                </mk-quadro>
             </div>
         </div>
         <!-- endparede -->
