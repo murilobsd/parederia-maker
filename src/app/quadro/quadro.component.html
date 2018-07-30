@@ -1,6 +1,7 @@
 <div ngDraggable 
   [ngClass]="id"
   class="drag-block" 
+  [position]="position"
   (started)="onStart($event)" 
   (stopped)="onStop($event)" 
   (movingOffset)="onMoving($event)"

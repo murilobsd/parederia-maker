@@ -15,6 +15,7 @@ export class QuadroComponent implements OnInit {
   @Input() cor: string;
   @Input() altura: number;
   @Input() largura: number;
+  @Input() position: object;
 
   constructor() { }
 
