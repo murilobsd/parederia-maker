@@ -5,7 +5,7 @@
     <hr>
     <ul class="list-unstyled components" *ngIf="quadros.length > 0">
         <li class="nav-item" *ngFor="let quadro of quadros">
-            <a class="nav-link" href="">
+            <a class="nav-link" (click)="adicionarQuadro(quadro)">
                 {{quadro.name}}
             </a>
         </li>

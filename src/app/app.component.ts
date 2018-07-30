@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter } from '@angular/core';
 // import * as res from 'res';
 import { Quadro } from './quadro/quadro.model';
 
@@ -10,16 +10,21 @@ import { Quadro } from './quadro/quadro.model';
 export class AppComponent {
   menuState: string = "hidden";
 
-  quadros: Array<Quadro> = [
+  quadrosMenu: Array<Quadro> = [
     new Quadro({'name': 'Moldura A2', 'largura': 440, 
                 'altura':615, 'preco': 12.12, 
                 'id': 'quadro_a2'})
   ];
 
+  quadros: Array<Quadro> = [];
   constructor() {}
 
   toggleMenu() {
     this.menuState = this.menuState === 'show' ? 'hidden' : 'show';
+  }
+
+  quadroNaParede(quadro: Quadro) {
+    this.quadros.push(quadro);
   }
 
 }
