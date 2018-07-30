@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'mk-quadro',
@@ -9,6 +9,12 @@ export class QuadroComponent implements OnInit {
 
   movingOffset = { x: 0, y: 0 };
   endOffset = { x: 0, y: 0 };
+
+  @Input() id: string;
+  @Input() preco: number;
+  @Input() cor: string;
+  @Input() altura: number;
+  @Input() largura: number;
 
   constructor() { }
 

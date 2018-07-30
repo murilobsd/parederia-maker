@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 // import * as res from 'res';
+import { Quadro } from './quadro/quadro.model';
 
 @Component({
   selector: 'mk-root',
@@ -9,8 +10,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   menuState: string = "hidden";
 
-  quadros: Array<string> = ["modulra 1", "modulra 1", "modulra 1", 
-  "modulra 1", "modulra 1", "modulra 1", "modulra 1", "modulra 1"];
+  quadros: Array<Quadro> = [
+    new Quadro({'name': 'Moldura A2', 'largura': 440, 
+                'altura':615, 'preco': 12.12, 
+                'id': 'quadro_a2'})
+  ];
 
   constructor() {}
 
