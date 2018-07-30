@@ -6,9 +6,9 @@
   <ul [ngClass]="defaultClass"
       (click)="openMenu($event)"
       *ngIf="items">
-    <li [style.display]="isOpen ? 'block' : 'none'" 
+    <li [style.display]="isOpen ? 'block' : 'block'" 
         *ngFor="let item of items">
-      <a>
+      <a (click)="alterarOrientacao($event)">
         <img src="{{item.symbol}}">
       </a>
     </li>

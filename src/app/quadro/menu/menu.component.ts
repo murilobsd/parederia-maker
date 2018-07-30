@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import {Item} from './menu.model';
 
 @Component({
@@ -20,6 +20,7 @@ export class MenuComponent implements OnInit {
   clickClass: string = "openmenu menuhover hidemainmenu cross";
   defaultClass: string = "openmenu";
   isOpen: boolean = false;
+  @Output() alteradoOrientacao = new EventEmitter();
 
   constructor() { }
 
@@ -33,6 +34,11 @@ export class MenuComponent implements OnInit {
   openMenu($event) {
     this.defaultClass = this.clickClass;
     this.isOpen = true;
+  }
+
+  alterarOrientacao($event) {
+    console.log("Pedido de altercao do quadro.");
+    this.alteradoOrientacao.emit($event);
   }
 
 }

@@ -1,6 +1,6 @@
 <div class="wrapper">
     <!-- sidebar -->
-    <mk-sidebar [state]="menuState" [quadros]="quadros"></mk-sidebar>
+    <mk-sidebar [state]="menuState" [quadros]="quadrosMenu" (clicadoQuadro)="quadroNaParede($event)"></mk-sidebar>
     <!-- endsidebar -->
 
     <div id="content" [style.position]="(menuState === 'show') ? 'relative' : 'fixed'">
@@ -37,7 +37,14 @@
 
         <!-- parede -->
         <div class="parede">
-            <mk-quadro></mk-quadro>
+            <div *ngFor="let quadro of quadros">
+                <mk-quadro [id]="quadro.id" 
+                           [position]="quadro.position"
+                           [largura]="quadro.largura"
+                           [altura]="quadro.altura"
+                >
+                </mk-quadro>
+            </div>
         </div>
         <!-- endparede -->
 
