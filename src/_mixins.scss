@@ -5,6 +5,25 @@
     transition:         $transition;
 }
 
+@mixin thumb($thumb...) {
+    -webkit-box-shadow: $thumb;
+    -moz-box-shadow: $thumb;
+    -o-box-shadow: $thumb;
+    box-shadow: $thumb;
+    position: relative;
+    top: 8px;
+    left: 8px;
+    background: white;
+}
+
+@mixin quadro($quadro...) {
+    -webkit-box-shadow: $quadro;
+    -moz-box-shadow: $quadro;
+    -o-box-shadow: $quadro;
+    box-shadow: $quadro;
+    background-color: black;
+}
+
 @mixin menuitens($pos, $w, $h, $bg, $limit: 4) {
     @for $i from 1 through $limit {
       &:nth-child(#{$i}) {

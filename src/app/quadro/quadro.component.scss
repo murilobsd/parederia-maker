@@ -1,23 +1,15 @@
+@import '../../mixins';
+
 .quadro_a2 {
-    -webkit-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
-    -o-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
-    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
-    background-color: black
+    @include quadro(1px 3px 8px rgba(0, 0, 0, 0.5));
+    
+    & .thumb {
+        width: calc(440px * 0.6 - 16px);
+        height: calc(615px * 0.6 - 16px);
+        @include thumb(inset -1px 1px 3px 1px rgba(0, 0, 0, 0.2));
+    }
 }
 
-.quadro_a2 .thumb {
-    background: white;
-    width: calc(440px * 0.6 - 16px);
-    height: calc(615px * 0.6 - 16px);
-    position: relative;
-    top: 8px;
-    left: 8px;
-    -webkit-box-shadow: inset -1px 1px 3px 1px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: inset -1px 1px 3px 1px rgba(0, 0, 0, 0.2);
-    -o-box-shadow: inset -1px 1px 3px 1px rgba(0, 0, 0, 0.2);
-    box-shadow: inset -1px 1px 3px 1px rgba(0, 0, 0, 0.2)
-}
 
 .quadro_a3 {
     -webkit-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
