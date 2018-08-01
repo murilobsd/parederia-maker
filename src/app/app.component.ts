@@ -8,14 +8,14 @@ import { Quadro } from './quadro/quadro.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  menuState: string = "hidden";
+  menuState = 'hidden';
 
   quadrosMenu: Array<Quadro> = [
-    new Quadro({'name': 'Moldura A2', 'largura': 264, 
-                'altura':369, 'preco': 12.12, 
+    new Quadro({'name': 'Moldura A2', 'largura': 264,
+                'altura':369, 'preco': 12.12,
                 'id': 'quadro_a2'}),
-    new Quadro({'name': 'Moldura A3', 'largura': 189, 
-                'altura':264, 'preco': 12.12, 
+    new Quadro({'name': 'Moldura A3', 'largura': 189,
+                'altura':264, 'preco': 12.12,
                 'id': 'quadro_a3'})
   ];
 
@@ -34,13 +34,13 @@ export class AppComponent {
   }
 
   private setPosition(quadro: Quadro): Quadro {
-    let position = {
+    const position = {
       'x': 100,
       'y': 100
-    }
-    console.log("Setando posicao inicial na parede: ", position);
+    };
+    console.log('Setando posicao inicial na parede: ', position);
     quadro.position = position;
-    return quadro
+    return quadro;
   }
 
 }
