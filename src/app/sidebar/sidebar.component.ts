@@ -7,8 +7,8 @@ import { Quadro } from '../quadro/quadro.model';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
-  
-  @Input() state: string = "show";
+
+  @Input() state = 'show';
   @Input() quadros: Array<Quadro> = [];
   @Output() clicadoQuadro = new EventEmitter();
 
@@ -18,7 +18,7 @@ export class SidebarComponent implements OnInit {
   }
 
   adicionarQuadro(quadro: Quadro) {
-    console.log("Clicado quadro: ", quadro.name);
+    console.log('Clicado quadro: ', quadro.name);
     this.clicadoQuadro.emit(quadro);
   }
 
