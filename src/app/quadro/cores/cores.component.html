@@ -1,0 +1,3 @@
+<div class="colorsmenu">
+    <span *ngFor="let cor of cores" [style.background-color]="cor.hex" (click)="alterarCor(cor.hex)"></span>
+</div>

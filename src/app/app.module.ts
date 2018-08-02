@@ -11,6 +11,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { QuadroComponent } from './quadro/quadro.component';
 import { MenuComponent } from './quadro/menu/menu.component';
 import { ThumbComponent } from './quadro/thumb/thumb.component';
+import { CoresComponent } from './quadro/cores/cores.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ThumbComponent } from './quadro/thumb/thumb.component';
     QuadroComponent,
     MenuComponent,
     ThumbComponent,
+    CoresComponent,
   ],
   imports: [
     BrowserModule,
