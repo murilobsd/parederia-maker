@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Cor } from '../cores/cor.model';
 
 @Component({
   selector: 'mk-thumb',
@@ -10,6 +11,7 @@ export class ThumbComponent implements OnInit {
   @Input() altura: number;
   @Input() largura: number;
   @Output() alteradoOrientacao = new EventEmitter();
+  @Output() alteradoCor = new EventEmitter();
 
   larguraThumb: number;
   alturaThumb: number;
@@ -25,5 +27,9 @@ export class ThumbComponent implements OnInit {
     this.alteradoOrientacao.emit(true);
     this.larguraThumb = this.larguraThumb === (this.largura * 0.6) - 16 ? (this.altura * 0.6) - 16 : (this.largura * 0.6) - 16;
     this.alturaThumb = this.alturaThumb === (this.altura * 0.6) - 16 ? (this.largura * 0.6) - 16 : (this.altura * 0.6) - 16;
+  }
+
+  alteraCor(cor: string) {
+    this.alteradoCor.emit(cor);
   }
 }
