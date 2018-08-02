@@ -1,52 +1,44 @@
 @mixin transition($transition...) {
-    -moz-transition:    $transition;
-    -o-transition:      $transition;
-    -webkit-transition: $transition;
-    transition:         $transition;
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  -webkit-transition: $transition;
+  transition: $transition;
 }
 
-@mixin thumb($thumb...) {
-    -webkit-box-shadow: $thumb;
-    -moz-box-shadow: $thumb;
-    -o-box-shadow: $thumb;
-    box-shadow: $thumb;
-    position: relative;
-    top: 8px;
-    left: 8px;
-    background: white;
-}
 
-@mixin quadro($quadro...) {
-    -webkit-box-shadow: $quadro;
-    -moz-box-shadow: $quadro;
-    -o-box-shadow: $quadro;
-    box-shadow: $quadro;
-    background-color: black;
+@mixin shadow($shadow...) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  -o-box-shadow: $shadow;
+  box-shadow: $shadow;
 }
 
 @mixin menuitens($pos, $w, $h, $bg, $limit: 4) {
-    @for $i from 1 through $limit {
-      &:nth-child(#{$i}) {
-        @if $i == 1 {
-            top: 30px;
-            left: 30px;
-        } @else if $i == 2 {
-            top: -30px;
-            left: -30px;
-        } @else if $i == 4 {
-            top: -30px;
-            left: 30px;
-        } @else {
-            top: 30px;
-            left: -30px;
-        }
-        display: block;
-        position: absolute;
-        width: $w;
-        height: $h;
-        background-color: $bg;
-        text-align: center;
-        border-radius: 50%;
+  @for $i from 1 through $limit {
+    &:nth-child(#{$i}) {
+      @if $i==1 {
+        top: 30px;
+        left: 30px;
       }
+      @else if $i==2 {
+        top: -30px;
+        left: -30px;
+      }
+      @else if $i==4 {
+        top: -30px;
+        left: 30px;
+      }
+      @else {
+        top: 30px;
+        left: -30px;
+      }
+      display: block;
+      position: absolute;
+      width: $w;
+      height: $h;
+      background-color: $bg;
+      text-align: center;
+      border-radius: 50%;
     }
+  }
 }
