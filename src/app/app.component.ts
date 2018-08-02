@@ -11,11 +11,11 @@ export class AppComponent {
   menuState = 'hidden';
 
   quadrosMenu: Array<Quadro> = [
-    new Quadro({'name': 'Moldura A2', 'largura': 264,
-                'altura':369, 'preco': 12.12,
+    new Quadro({'name': 'Moldura A2', 'largura': 440,
+                'altura': 615, 'preco': 12.12,
                 'id': 'quadro_a2'}),
     new Quadro({'name': 'Moldura A3', 'largura': 189,
-                'altura':264, 'preco': 12.12,
+                'altura': 264, 'preco': 12.12,
                 'id': 'quadro_a3'})
   ];
 
