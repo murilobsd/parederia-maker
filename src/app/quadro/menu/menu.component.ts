@@ -7,19 +7,19 @@ import {Item} from './menu.model';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
-  
+
   /* Itens que montam no menu do quadro.*/
-  items:Array<Item> = [
+  items: Array<Item> = [
     new Item({id: 'color', symbol: '/assets/img/pick_color.svg'}),
     new Item({id: 'upload', symbol: '/assets/img/upload_pic.svg'}),
     new Item({id: 'rotate', symbol: '/assets/img/rotate.svg'}),
     new Item({id: 'delete', symbol: '/assets/img/delete.svg'})
   ]
 
-  openClass: string = "openmenu menuhover";
-  clickClass: string = "openmenu menuhover hidemainmenu cross";
-  defaultClass: string = "openmenu";
-  isOpen: boolean = false;
+  openClass = 'openmenu menuhover';
+  clickClass = 'openmenu menuhover hidemainmenu cross';
+  defaultClass = 'openmenu';
+  isOpen = false;
   @Output() alteradoOrientacao = new EventEmitter();
 
   constructor() { }
@@ -27,7 +27,7 @@ export class MenuComponent implements OnInit {
   ngOnInit() {}
 
   changeStyle($event) {
-    this.defaultClass = $event.type == 'mouseover' ? this.openClass : "openmenu";
+    this.defaultClass = $event.type === 'mouseover' ? this.openClass : 'openmenu';
     this.isOpen = false;
   }
 
@@ -37,7 +37,7 @@ export class MenuComponent implements OnInit {
   }
 
   alterarOrientacao($event) {
-    console.log("Pedido de altercao do quadro.");
+    console.log('Pedido de altercao do quadro.');
     this.alteradoOrientacao.emit(true);
   }
 
