@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Cor } from './cores/cor.model';
 
 
 @Component({
@@ -13,7 +14,7 @@ export class QuadroComponent implements OnInit {
 
   @Input() id: string;
   @Input() preco: number;
-  @Input() cor: string;
+  @Input() cor = 'black';
   @Input() altura: number;
   @Input() largura: number;
   @Input() position: object;
@@ -51,6 +52,11 @@ export class QuadroComponent implements OnInit {
     console.log('Pedido de alteracao da orientacao recebido.');
     this.larguraQuadro = this.larguraQuadro === (this.largura * 0.6) ? (this.altura * 0.6) : (this.largura * 0.6);
     this.alturaQuadro = this.alturaQuadro === (this.altura * 0.6) ? (this.largura * 0.6) : (this.altura * 0.6);
+  }
+
+  alteraCor(cor: string) {
+    console.log('Perdido de alteração de cor da borda.', cor);
+    this.cor = cor;
   }
 
 }

@@ -3,6 +3,7 @@
   class="quadro"
   [style.width.px]="larguraQuadro"
   [style.height.px]="alturaQuadro"
+  [style.background-color]="cor"
   (started)="onStart($event)"
   (stopped)="onStop($event)"
   (movingOffset)="onMoving($event)"
@@ -10,6 +11,7 @@
   (endOffset)="onMoveEnd($event)">
   <mk-thumb
     (alteradoOrientacao)="alteraOrientacao()"
+    (alteradoCor)="alteraCor($event)"
     [altura]="altura"
     [largura]="largura">
   </mk-thumb>
