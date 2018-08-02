@@ -14,7 +14,7 @@ export class MenuComponent implements OnInit {
     new Item({id: 'upload', symbol: '/assets/img/upload_pic.svg'}),
     new Item({id: 'rotate', symbol: '/assets/img/rotate.svg'}),
     new Item({id: 'delete', symbol: '/assets/img/delete.svg'})
-  ]
+  ];
 
   openClass = 'openmenu menuhover';
   clickClass = 'openmenu menuhover hidemainmenu cross';
