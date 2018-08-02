@@ -1,6 +1,6 @@
 <div class="wrapper">
     <!-- sidebar -->
-    <mk-sidebar [state]="menuState" [quadros]="quadrosMenu" (clicadoQuadro)="quadroNaParede($event)"></mk-sidebar>
+    <mk-sidebar [state]="menuState" (clicadoQuadro)="quadroNaParede($event)"></mk-sidebar>
     <!-- endsidebar -->
 
     <div id="content" [style.position]="(menuState === 'show') ? 'relative' : 'fixed'">
@@ -30,7 +30,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </nav>
         <!-- end nav -->
@@ -38,7 +38,7 @@
         <!-- parede -->
         <div class="parede">
             <div *ngFor="let quadro of quadros">
-                <mk-quadro [id]="quadro.id" 
+                <mk-quadro [id]="quadro.id"
                            [position]="quadro.position"
                            [largura]="quadro.largura"
                            [altura]="quadro.altura"
@@ -66,7 +66,7 @@
         <!-- end footer -->
     </div>
 
-</div>   
+</div>
 <!-- modal configuracao da parede -->
 <div bsModal #smModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="dialog-sizes-name2">
     <div class="modal-dialog modal-sm">
