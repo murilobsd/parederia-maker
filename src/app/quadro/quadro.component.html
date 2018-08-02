@@ -1,15 +1,16 @@
-<div ngDraggable 
-  [ngClass]="id"
-  class="drag-block"
-  [style.width.px]="largura"
-  [style.height.px]="altura"  
+<div ngDraggable
   [position]="position"
-  (started)="onStart($event)" 
-  (stopped)="onStop($event)" 
+  class="quadro"
+  [style.width.px]="larguraQuadro"
+  [style.height.px]="alturaQuadro"
+  (started)="onStart($event)"
+  (stopped)="onStop($event)"
   (movingOffset)="onMoving($event)"
-  [preventDefaultEvent]="true" 
+  [preventDefaultEvent]="true"
   (endOffset)="onMoveEnd($event)">
-  <div class="thumb">
-      <mk-menu (alteradoOrientacao)="alteraOrientacao()"></mk-menu>
-  </div>
+  <mk-thumb
+    (alteradoOrientacao)="alteraOrientacao()"
+    [altura]="altura"
+    [largura]="largura">
+  </mk-thumb>
 </div>
