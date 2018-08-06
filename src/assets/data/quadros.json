@@ -5,5 +5,110 @@
     "largura": 440,
     "altura": 615,
     "preco": 10.10
+  },
+  {
+    "id": "quadro_a3",
+    "name": "Moldura A3",
+    "largura": 315,
+    "altura": 440,
+    "preco": 10.10
+  },
+  {
+    "id": "quadro_a4",
+    "name": "Moldura A4",
+    "largura": 315,
+    "altura": 230,
+    "preco": 10.10
+  },
+  {
+    "id": "quadro_a5",
+    "name": "Moldura A5",
+    "largura": 170,
+    "altura": 230,
+    "preco": 10.10
+  },
+  {
+    "id": "quadro_12",
+    "name": "Moldura 12",
+    "largura": 120,
+    "altura": 120,
+    "preco": 10.10
+  },
+  {
+    "id": "quadro_fotogramma",
+    "name": "Moldura Fotograma",
+    "largura": 170,
+    "altura": 120,
+    "preco": 10.10
+  },
+  {
+    "id": "quadro_panorama",
+    "name": "Moldura Panorama",
+    "largura": 440,
+    "altura": 200,
+    "preco": 10.10
+  },
+  {
+    "id": "quadro_15",
+    "name": "Moldura 15",
+    "largura": 150,
+    "altura": 150,
+    "preco": 10.10
+  },
+  {
+    "id": "quadro_20",
+    "name": "Moldura 20",
+    "largura": 200,
+    "altura": 200,
+    "preco": 10.10
+  },
+  {
+    "id": "quadro_25",
+    "name": "Moldura 25",
+    "largura": 250,
+    "altura": 250,
+    "preco": 10.10
+  },
+  {
+    "id": "quadro_30",
+    "name": "Moldura 30",
+    "largura": 300,
+    "altura": 300,
+    "preco": 10.10
+  },
+  {
+    "id": "quadro_30_40",
+    "name": "Moldura 30x40",
+    "largura": 420,
+    "altura": 320,
+    "preco": 10.10
+  },
+  {
+    "id": "quadro_wide",
+    "name": "Moldura Wide",
+    "largura": 440,
+    "altura": 120,
+    "preco": 10.10
+  },
+  {
+    "id": "quadro_20_25",
+    "name": "Moldura 20x25",
+    "largura": 220,
+    "altura": 270,
+    "preco": 10.10
+  },
+  {
+    "id": "quadro_20_15",
+    "name": "Moldura 20x15",
+    "largura": 220,
+    "altura": 170,
+    "preco": 10.10
+  },
+  {
+    "id": "quadro_eclipse",
+    "name": "Moldura Eclipse",
+    "largura": 150,
+    "altura": 150,
+    "preco": 10.10
   }
 ]
